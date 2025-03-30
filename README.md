@@ -1,4 +1,4 @@
-![oci-base](https://github.com/2plus2cabbage/2plus2cabbage/blob/main/images/aws-base.png)
+![aws-base](https://github.com/2plus2cabbage/2plus2cabbage/blob/main/images/aws-base.png)
 
 # AWS Windows Instance Terraform Deployment
 
