@@ -1,3 +1,5 @@
+![oci-base](https://github.com/2plus2cabbage/2plus2cabbage/blob/main/images/aws-base.png)
+
 # AWS Windows Instance Terraform Deployment
 
 Deploys a Windows Server 2022 VM in Amazon Web Services (AWS) with RDP and internet access.
