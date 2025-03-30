@@ -34,3 +34,8 @@ The project is split into multiple files to illustrate modularity and keep separ
 4. Get the initial password in the AWS Console under **EC2 > Instances > [click running instance] > Actions > Security > Get Windows Password**, using your key pair to decrypt.
 5. Use Remote Desktop to log in with the `Administrator` user and initial password; change the password on first login.
 6. To remove all resources, run `terraform destroy` (type `yes`).
+
+## Potential costs and licensing
+- The resources deployed using this Terraform configuration should generally incur minimal to no costs, provided they are terminated promptly after creation.
+- It is important to fully understand your cloud provider's billing structure, trial periods, and any potential costs associated with the deployment of resources in public cloud environments.
+- You are also responsible for any applicable software licensing or other charges that may arise from the deployment and usage of these resources.
