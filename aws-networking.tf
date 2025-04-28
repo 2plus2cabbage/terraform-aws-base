@@ -12,7 +12,7 @@ resource "aws_vpc" "cabbage_vpc" {
 resource "aws_subnet" "cabbage_subnet" {
   vpc_id               = aws_vpc.cabbage_vpc.id                             # VPC ID for the subnet
   cidr_block           = "10.3.1.0/24"                                      # CIDR block for the subnet
-  availability_zone    = "${var.region}a"                                   # # Availability zone for the subnet (e.g., us-east-1a)
+  availability_zone    = "${var.region}a"                                   # Availability zone for the subnet (e.g., us-east-1a)
   tags = {
     Name               = "${local.subnet_name_prefix}1031024"               # Name of the subnet
   }
@@ -22,6 +22,6 @@ resource "aws_subnet" "cabbage_subnet" {
 resource "aws_internet_gateway" "cabbage_igw" {
   vpc_id               = aws_vpc.cabbage_vpc.id                             # VPC ID for the internet gateway
   tags = {
-    Name               = "igw-${var.environment_name}-${var.location}-001"  # Name of the internet gateway
+    Name               = "${local.internet_gateway_name_prefix}001"         # Name of the internet gateway
   }
 }
